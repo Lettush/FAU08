@@ -1,0 +1,86 @@
+# ==== CONFIGURING GIT ====
+git config --global user.name "username"
+git config --global user.email "email"
+git config user.name
+git config user.email
+
+U - Untracked
+A - Added
+
+# Initialize a repository
+git init
+
+# Git 3 Stage Architecture
+# Check the status
+git status
+
+# Adding files to the staging area
+git add .
+
+# Create a commit
+git commit -m "This is the description"
+
+# Undo the last commit.
+# Keep the changes in the working directory. (unstaged)
+git reset HEAD~1
+
+# ==== BRANCHING ====
+
+# List all branches
+git branch -a
+
+# Create a new branch
+git branch [branch-name]
+
+# Switch into a different branch
+git switch [branch-name]
+
+# ==== MERGING ====
+# Combines one branch into another.
+
+# Merging feature branch to the main branch
+git merge [branch-name]
+
+# Delete a branch
+git branch -d [branch-name]
+
+# ==== REMOTE REPOSITORY ====
+# 1. GitHub
+# 2. Click the New Button
+# 3. Create a repository in GitHub.
+#      a. Name: Repository Name
+#      b. Status: Public or Private
+#      c. Click: Create Repository
+# 4. Copy the Repository URL.
+#      a. Click Button: Code
+#      b. Copy the HTTPS URL
+# 5. Open your terminal.
+
+# Add a remote to the local repository
+git remote add origin [repository-url]
+
+# Set the branch to main
+git branch -M main
+
+# Push commits to the remote repository for the first time
+# -u flag: Initial Push
+# Tracking between the local and remote branches
+git push -u origin main
+
+# Push commits to the remote repository
+git push
+
+# ==== CLONING ====
+# Clone the Repository using URL
+git clone [repository-url]
+
+# ==== FORKING ====
+# 1. Fork Button
+# 2. Create a new form
+#       a. Repository Name
+#       b. Create Fork Button
+# 3. Button: Add File or +
+#       a. File: name.txt
+#       b. Content: This is name file.
+# 4. Button: Commit Changes
+# 5. Modal: Commit Changes
